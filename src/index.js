@@ -4,6 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// previously used ReactDOM.render for React applictaions but now using 
+// ReactDOM.createRoot which has concurrent rendering allows React to work 
+// on multiple tasks simultaneously. 
+
+//React.StrictMode does strict checks and gives warnings if there are any 
+//in the console
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
